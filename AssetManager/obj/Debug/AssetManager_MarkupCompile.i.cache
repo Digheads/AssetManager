@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jablo\Source\Repos\AssetManager\AssetManager\obj\Release\
+C:\Users\jablo\Source\Repos\AssetManager\AssetManager\obj\Debug\
 AssetManager
 none
 false
-TRACE
+DEBUG;TRACE
 C:\Users\jablo\Source\Repos\AssetManager\AssetManager\App.xaml
 28-1411278905
 1766465819
-59631206316
-76-478849741
+63-704460243
+76-177743845
 Dialogs\ExtensionError.xaml;ImportMotion.xaml;ImportModel.xaml;ImportFont.xaml;ImportSound.xaml;ImportScript.xaml;ImportPackage.xaml;ImportPSD.xaml;ImportSubstance.xaml;ImportTexture.xaml;Pages\BVHs.xaml;Pages\Fonts.xaml;Pages\OneShots.xaml;Pages\Models.xaml;Pages\ModelTextures.xaml;Pages\PlayerView.xaml;Pages\Loops.xaml;Pages\Scripts.xaml;Pages\Packages.xaml;Pages\PSDs.xaml;Pages\Substances.xaml;Show3D.xaml;MainWindow.xaml;Pages\Settings\About.xaml;Pages\Settings\Appearance.xaml;Pages\Home.xaml;Pages\SettingsPage.xaml;Pages\Textures.xaml;
 
 False

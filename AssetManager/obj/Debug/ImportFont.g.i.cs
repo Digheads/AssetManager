@@ -9,8 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using AssetManager.Pages;
-using HelixToolkit.Wpf;
 using System;
 using System.Diagnostics;
 using System.Windows;
