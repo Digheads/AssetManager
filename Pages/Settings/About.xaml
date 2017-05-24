@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="AssetManager.Pages.Settings.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="ABOUT" Style="{StaticResource Heading2}" />
+                <TextBlock Text="AssetManager is free to use, modify and redistribute for hobby and commercial use either as far as the code segments you may want to use from the appropriate libraries allows that within the source code of this software!" Margin="0,0,0,8" TextWrapping="Wrap" />
+                <TextBlock Text="Heavy thanks for the creators of the following libraries:" Margin="0,0,0,3" TextWrapping="Wrap" FontSize="20"/>
+                <TextBlock Text="HelixToolkit" Margin="0,0,0,3" TextWrapping="Wrap"  FontSize="20"/>
+                <TextBlock Text="Bewegungsfelder" Margin="0,0,0,3" TextWrapping="Wrap"  FontSize="20"/>
+                <TextBlock Text="ModernUI" Margin="0,0,0,3" TextWrapping="Wrap"  FontSize="20"/>
+                <TextBlock Text="MVVM Light" Margin="0,0,0,3" TextWrapping="Wrap"  FontSize="20"/>
+                <TextBlock Text=".NET developers" Margin="0,0,0,20" TextWrapping="Wrap"  FontSize="20"/>
+                <TextBlock Text="This software is created by Digheads Ferke!" Margin="0,0,0,8" TextWrapping="Wrap" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

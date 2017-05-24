@@ -1,0 +1,58 @@
+﻿<mui:ModernWindow x:Class="AssetManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="Asset Manager" IsTitleVisible="True"    
+        ContentSource="/Pages/Home.xaml" Width="1024" Height="650" Closed="ModernWindow_Closed" WindowStartupLocation="CenterScreen">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Motions">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="BVHs" Source="/Pages/BVHs.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Models">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="3D Objects" Source="/Pages/Models.xaml" />
+                <mui:Link DisplayName="Textures" Source="/Pages/ModelTextures.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Materials">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Textures" Source="/Pages/Textures.xaml" />
+                <mui:Link DisplayName="Substances" Source="/Pages/Substances.xaml" />
+                <mui:Link DisplayName="PSDs" Source="/Pages/PSDs.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Sounds">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Loops" Source="/Pages/Loops.xaml" />
+                <mui:Link DisplayName="One shots" Source="/Pages/OneShots.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Fonts">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Pages/Fonts.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Scripts">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Pages/Scripts.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Packages">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Unity3D" Source="/Pages/Packages.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Settings" GroupKey="Settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Settings" Source="/Pages/SettingsPage.xaml" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

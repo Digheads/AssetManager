@@ -1,0 +1,55 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AssetManager.ImportTexture"
+        Title="Import Texture" Width="600" Height="500" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Texture type: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        <Label Content="Texture name: " Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        <ComboBox x:Name="TextureTypes" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" IsEditable="True"/>
+        <TextBox x:Name="TextureName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5"/>
+        <ListView x:Name="FileList" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectionMode="Multiple" Margin="5,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ComboBox x:Name="ImageType" Grid.Column="1" SelectedValue="{Binding Type}" Height="30" Width="100">
+                            <System:String>Diffuse</System:String>
+                            <System:String>Specular</System:String>
+                            <System:String>Metallic</System:String>
+                            <System:String>Bump</System:String>
+                            <System:String>Normal</System:String>
+                            <System:String>Height</System:String>
+                            <System:String>Occlusion</System:String>
+                            <System:String>Emission</System:String>
+                            <System:String>Opacity</System:String>
+                        </ComboBox>
+                        <Expander x:Name="FullFilePath" Header="{Binding FullName}">
+                            <Image Source="{Binding Header, ElementName=FullFilePath}" Stretch="Uniform" Width="300" Margin="5"/>
+                        </Expander>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="AddFiles" Content="Add files" Grid.Row="2" Click="AddFiles_Click" Margin="5,5,0,5"/>
+        <Button x:Name="RemoveFiles" Content="Remove files" Grid.Row="3" Click="RemoveFiles_Click" Margin="5,5,0,5"/>
+        <Button x:Name="Ok" Content="Ok" Grid.Row="4" Grid.Column="1" Click="Ok_Click" Margin="5" IsDefault="True"/>
+        <Button x:Name="Cancel" Content="Cancel" Grid.Row="4" Grid.Column="2" Margin="5" IsCancel="True"/>
+    </Grid>
+</Window>

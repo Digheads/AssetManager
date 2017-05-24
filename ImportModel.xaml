@@ -1,0 +1,33 @@
+﻿<Window xmlns:helix="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AssetManager.ImportModel"
+        Title="Import Model" Width="600" Height="500" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Model type: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        <Label Content="Model name: " Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        <ComboBox x:Name="ModelTypes" Grid.Column="1" Grid.ColumnSpan="2" IsEditable="True" Margin="5"/>
+        <TextBox x:Name="ModelName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5"/>
+        <TextBlock x:Name="FilePath" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" Margin="5,0"/>
+        <Button x:Name="Browse" Content="Browse" Grid.Row="2" Click="Browse_Click" Margin="5,5,0,5"/>
+        <helix:HelixViewport3D ZoomExtentsWhenLoaded="True" Name="viewport" Grid.Row="3" Grid.ColumnSpan="3" Margin="10">
+            <helix:SunLight/>
+            <helix:MeshGeometryVisual3D x:Name="Mesh"/>
+        </helix:HelixViewport3D>
+        <Button x:Name="Ok" Content="Ok" Grid.Row="4" Grid.Column="1" Click="Ok_Click" Margin="5" IsDefault="True"/>
+        <Button x:Name="Cancel" Content="Cancel" Grid.Row="4" Grid.Column="2" Margin="5" IsCancel="True"/>
+    </Grid>
+</Window>

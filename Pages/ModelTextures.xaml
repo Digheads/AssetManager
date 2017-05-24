@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="AssetManager.Pages.ModelTextures"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:bored="clr-namespace:AssetManager.Common"
+             mc:Ignorable="d">
+    <Grid Style="{StaticResource ContentRoot}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MaxWidth="250" MinWidth="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="300"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="TexturesList" Grid.RowSpan="2" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Hidden" SelectionChanged="TexturesList_SelectionChanged"/>
+            <bored:ZoomBorder Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="10">
+            <Image x:Name="Preview"/>
+            </bored:ZoomBorder>
+            <TextBlock x:Name="Tipp" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">
+                <TextBlock Name="Dimension" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                <Button x:Name="Export" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Export" Margin="10,0,10,0" Click="Export_Click"/>
+                <Button x:Name="ExportAll" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="ExportAll" Margin="10,0,10,0" Click="ExportAll_Click"/>
+                <TextBlock Name="Size" Margin="10,0,10,0" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

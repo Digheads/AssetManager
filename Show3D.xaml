@@ -1,0 +1,26 @@
+﻿<Window x:Class="AssetManager.Show3D"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:helix="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
+        Title="Asset Manager - 3D Preview" Width="600" Height="500" Closed="Window_Closed" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/show3Dbg.jpg" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <RadioButton Name="BoxRadio" Content="Box" Margin="10" Checked="BoxRadio_Checked"/>
+            <RadioButton Name="SphereRadio" Content="Sphere" Margin="10" Checked="SphereRadio_Checked"/>
+            <RadioButton Name="TubeRadio" Content="Tube" Margin="10" Checked="TubeRadio_Checked"/>
+            <RadioButton Name="TeapotRadio" Content="Teapot" Margin="10" Checked="TeapotRadio_Checked"/>
+        </StackPanel>
+        <helix:HelixViewport3D ZoomExtentsWhenLoaded="True" Name="viewport" Grid.Row="1">
+            <helix:SunLight/>
+            <helix:MeshGeometryVisual3D x:Name="mesh"/>
+        </helix:HelixViewport3D>
+
+    </Grid>
+</Window>
