@@ -18,7 +18,7 @@ Have you ever noticed that you cannot find the right asset for a game level that
 ### Why asset manager is Windows Desktop only?
 Nowadays hobbists develop games on their Windows based computers, on desktop. Therefore it is pointless browsing your assets on portable, mobile devices.
 
-### Why only BVH motion format supported only?
+### Why BVH motion format is supported only?
 It is the most widely known format across motion capture formats. It is the most easiest, human-readable format and can be converted to almost any other motion capture formats.
 
 ### Why only OBJ files are supported as 3D objects?
@@ -33,7 +33,7 @@ I ain't got enough resources to accomplish that kind of huge interpretation of t
 ### Why only Wav sound format is accepted?
 Easy to work with them, and no codec is needed for playback. Maybe that's all.
 
-### Why only TrueType Format accepted as Font?
+### Why only TrueType Format is accepted as Font?
 Hmmm... I must admit I got plenty of them...
 
 ### Only four script formats? Are you serious?
