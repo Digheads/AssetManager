@@ -12,7 +12,7 @@ Have you ever noticed that you cannot find the right asset for a game level that
 * Manages collection of Photoshop PSDs
 * Wav format - Sound preview
 * TrueType format - Font preview
-* Preview of script files written C#, C++, Pascal, JavaScript
+* Preview of script files written in C#, C++, Pascal, JavaScript
 * Manages collection of UnityPackages
 
 ### Why asset manager is Windows Desktop only?
@@ -24,7 +24,7 @@ It is the most widely known format across motion capture formats. It is the most
 ### Why only OBJ files are supported as 3D objects?
 OBJ is the most traditional and generally used 3D format. Almost every 3D software can load/import/export it. Just as BVH, so OBJ is the most easiest, human-readable format that can be converted to a wide range of other 3D formats.
 
-### Why only JPG, PNG, BMP texture formats allowed only?
+### Why JPG, PNG, BMP texture formats allowed only?
 Hobby/Indie game developers don't really care about well-proven game texture standards. So traditional image formats are generally accepted in startup/garage teams. You knwo what? The game engine will do the rest...
 
 ### Why there is no preview on Substances, PSDs?
