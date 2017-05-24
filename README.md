@@ -20,7 +20,7 @@ Nowadays hobbists develop games on their Windows based computers, on desktop. Th
 It is the most widely known format across motion capture formats. It is the most easiest and humanly readable format and can be converted to almost any other motion capture formats.
 
 ### Why only OBJ files are supported as 3D objects?
-OBJ is the most traditional and generally used 3D format. Almost every 3D Software can load/import/export it. As well as BVH, OBJ is the most easiest and humanly readable format that can be converted to a wide range of other 3D formats.
+OBJ is the most traditional and generally used 3D format. Almost every 3D software can load/import/export it. Just as BVH, so OBJ is the most easiest and humanly readable format that can be converted to a wide range of other 3D formats.
 
 ### Why only JPG, PNG, BMP texture format allowed only?
 Hobby game developers don't really care about natively game texture formats. So traditional image formats are generally accepted in startup/garage teams. You knwo what? The game engine will do the rest...
