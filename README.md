@@ -2,7 +2,6 @@
 Have you ever noticed that you cannnot find the right asset for a game level that you're working on? AssetManager is a content manager software for game developers with import/export/preview capability. It can vsiualize a huge set of asset types.
 
 ## Features
-
 * BHV format Motion Capture / Animation preview
 * OBJ format Preview of 3D Model and Textures assigned to them
 * JPG, BMP, PNG format Preview of Textures of any kind
@@ -38,4 +37,14 @@ Hmmm... I must admit I got plenty of them...
 Yes. Who need more? These are the most standard code formats in hobby game development.
 
 ### UnityPackages? You are crazy!
-Ok, it is not a general game asset, but I got huge bunch of those...
+Ok, it is not a general game asset, but I got bunch of them...
+
+#### Many thanks for the creators of the following libraries, frameworks, APIs:
+* **HelixToolkit**
+* **Bewegungsfelder**
+* **ModernUI**
+* **MVVM Light**
+* **.NET Developers**
+
+#####Remarks, license
+AssetManager is free to use, modify and redistribute for hobby and commercial use either as far as the code segments you may want to use from the appropriate libraries allows that within the source code of this software!
