@@ -1,2 +1,41 @@
-# AssetManager
-Cotent manager for Game Assets
+# What is AssetManager?
+Have you ever noticed that you cannnot find the right asset for a game level that you're working on? AssetManager is a content manager software for game developers with import/export/preview capability. It can vsiualize a huge set of asset types.
+
+## Features
+
+..* BHV format Motion Capture / Animation preview
+..* OBJ format Preview of 3D Model and Textures assigned to them
+..* JPG, BMP, PNG format Preview of Textures of any kind
+..* Manages collection of Substances
+..* Manages collection of Photoshop PSDs
+..* Wav format Sound preview
+..* TrueType format Font preview
+..* Preview of Script files written C#, C++, Pascal, JavaScript
+..* Manages collection of UnityPackages
+
+### Why asset manager is Windows Desktop only?
+Nowadays hobbists develop games on their Windows based computers, on desktop. Therefore it is pointless browsing your assets on portable, mobile devices.
+
+### Why only BVH motion format supported only?
+It is the most widely known format across motion capture formats. It is the most easiest and humanly readable format and can be converted to almost any other motion capture formats.
+
+### Why only OBJ files are supported as 3D objects?
+OBJ is the most traditional and generally used 3D format. Almost every 3D Software can load/import/export it. As well as BVH, OBJ is the most easiest and humanly readable format that can be converted to a wide range of other 3D formats.
+
+### Why only JPG, PNG, BMP texture format allowed only?
+Hobby game developers don't really care about natively game texture formats. So traditional image formats are generally accepted in startup/garage teams. You knwo what? The game engine will do the rest...
+
+### Why there is no preview on Substances, PSDs?
+I ain't got enough resources to accomplish that kind of huge interpretation of these formats. But you can import preview image beside those assets.
+
+### Why only Wav sound formats are accepted?
+Easy to work with them, and no codec is needed for playback. Maybe that's all.
+
+### Why only TrueType Format accepted as Font?
+Hmmm... I must admit I got plenty of them...
+
+### Only four script formats? Are you serious?
+Yes. Who need more? These are the most standard code formats in hobby game development.
+
+### UnityPackages? You are crazy!
+Ok, it is not a general game asset, but I got huge bunch of those...
