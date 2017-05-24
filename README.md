@@ -1,6 +1,9 @@
 # What is AssetManager?
 Have you ever noticed that you cannnot find the right asset for a game level that you're working on? AssetManager is a content manager software for game developers with import/export/preview capability. It can vsiualize a huge set of asset types.
 
+# Download it Today!
+[Download the latest release](https://github.com/Digheads/AssetManager/releases)
+
 ## Features
 * BHV format Motion Capture / Animation preview
 * OBJ format Preview of 3D Model and Textures assigned to them
