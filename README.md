@@ -46,5 +46,5 @@ Ok, it is not a general game asset, but I got bunch of them...
 * **MVVM Light**
 * **.NET Developers**
 
-#####Remarks, license
+####Remarks, license
 AssetManager is free to use, modify and redistribute for hobby and commercial use either as far as the code segments you may want to use from the appropriate libraries allows that within the source code of this software!
