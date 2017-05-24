@@ -3,15 +3,15 @@ Have you ever noticed that you cannnot find the right asset for a game level tha
 
 ## Features
 
-..* BHV format Motion Capture / Animation preview
-..* OBJ format Preview of 3D Model and Textures assigned to them
-..* JPG, BMP, PNG format Preview of Textures of any kind
-..* Manages collection of Substances
-..* Manages collection of Photoshop PSDs
-..* Wav format Sound preview
-..* TrueType format Font preview
-..* Preview of Script files written C#, C++, Pascal, JavaScript
-..* Manages collection of UnityPackages
+* BHV format Motion Capture / Animation preview
+* OBJ format Preview of 3D Model and Textures assigned to them
+* JPG, BMP, PNG format Preview of Textures of any kind
+* Manages collection of Substances
+* Manages collection of Photoshop PSDs
+* Wav format Sound preview
+* TrueType format Font preview
+* Preview of Script files written C#, C++, Pascal, JavaScript
+* Manages collection of UnityPackages
 
 ### Why asset manager is Windows Desktop only?
 Nowadays hobbists develop games on their Windows based computers, on desktop. Therefore it is pointless browsing your assets on portable, mobile devices.
